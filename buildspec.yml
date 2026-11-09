@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Starting build process"
+
+  build:
+    commands:
+      - echo "Building application"
+      - test -f index.html
+      - echo "Build successful"
+
+artifacts:
+  files:
+    - index.html
